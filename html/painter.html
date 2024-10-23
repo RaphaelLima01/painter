@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="body-painter">
+    <div id="container">
         <div class="header">
             <input type="color" name="" id="input-color">
-    </div>
-    <div class="container-canvas" >
-        <canvas id="canvas" width="800" height="400"></canvas>
-        <button id="btn-limpar">limpar</button>
-    </div>
-    </div>
+            <button title="Refazer" id="btn-refazer"><ion-icon name="arrow-undo-sharp"></ion-icon></button> 
+            <button title="Desfazer" id="btn-desfazer"><ion-icon name="arrow-redo-sharp"></ion-icon></button>
+            <button id="btn-limpar" title="limpar"><ion-icon name="trash-sharp"></ion-icon></button>
+        </div>
+
+        <div class="container-canvas" >
+            <canvas id="canvas" width="800" height="400"></canvas>
+        </div>
+
+</div>
+
 </body>
 <script src="/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
